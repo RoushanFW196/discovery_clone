@@ -1,5 +1,10 @@
- 
+ import React from "react";
+ import {Explore} from "./explore/Explore.jsx";
 
  export const Home=()=>{
-     return<h1>hello</h1>
+     return(
+         <>
+             <Explore/>
+         </>
+     )
  }
