@@ -1,9 +1,11 @@
 import React from "react";
 import "./premium.css";
 import percent from "./percent.png";
+import Discovery_grid from "./grid/Discovery_grid"
 
 function premium() {
   return (
+   <>
     <div className="premium-box">
       <div className="premium-content">
         <img
@@ -41,6 +43,8 @@ function premium() {
         </div>
       </div>
     </div>
+    <Discovery_grid/>
+   </>
   );
 }
 

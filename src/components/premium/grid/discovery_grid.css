@@ -1,0 +1,51 @@
+
+.discoveryGrid {
+    margin-top: 3%;
+    background-color: #1e2025;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.head{
+    padding-top: 2%;
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 5px;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    /* grid-template-rows: repeat(2, 40%); */
+    /* grid-row-gap: 20px; */
+}
+
+
+/* .main>div>img {
+    width: 100%;
+    border-radius: 5px;
+} */
+
+.image-margin {
+    margin-bottom: 14%;
+}
+
+.container {
+    position: relative;
+    color: white;
+    /* text-align: center; */
+}
+
+.centered {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.img-card-margin-bottom{
+    margin-bottom: 30px;
+}
+.img-card-margin-bottom-in-minus{
+    margin-bottom: -14px
+}

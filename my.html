@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: red;
+            font-size: 1.5em;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            grid-column-gap: 5px;
+            /* grid-template-rows: repeat(2, 40%); */
+            /* grid-row-gap: 20px; */
+            justify-content: space-evenly;
+            border: 1px solid red;
+        }
+
+
+        .main>div>img {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        .image-margin {
+            margin-bottom: 14%;
+        }
+
+        .container {
+            position: relative;
+            /* text-align: center; */
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .img-card-margin-bottom{
+            margin-bottom: 30px;
+        }
+        .img-card-margin-bottom-in-minus{
+            margin-bottom: -14px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <div class="container">
+                <img class="image-margin"
+                    src="https://ap2-prod-images.disco-api.com/2021/12/21/1ba9e855-0426-462b-bcfd-6667ca51b99b.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom"><p>Binge</p></div>
+            </div>
+            <div class="container">
+                <img src="https://ap2-prod-images.disco-api.com/2021/12/21/9999c652-3e08-46ce-8b83-d4d7e01c3497.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom-in-minus"><p>Browse</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img class="image-margin"
+                    src="https://ap2-prod-images.disco-api.com/2021/12/21/e3d5f3d0-4acc-4a46-b3bc-646f832b9326.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom"><p>Watch</p></div>
+            </div>
+            <div class="container">
+                <img src="https://ap2-prod-images.disco-api.com/2021/12/21/a5b80ce1-4659-4977-b5dc-cdbf9c03641c.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom-in-minus"><p>Find</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img src="https://ap2-prod-images.disco-api.com/2021/12/21/b8c2ea45-9c74-4005-9f7e-4a8d447a98eb.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div  class="centered img-card-margin-bottom-in-minus"><p>Stream</p></div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <img class="image-margin"
+                    src="https://ap2-prod-images.disco-api.com/2022/1/3/3fbd93c4-e18d-4238-ac5f-dab703206b00.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom"><p>Enjoy</p></div>
+            </div>
+            <div class="container">
+                <img src="https://ap2-prod-images.disco-api.com/2022/1/3/1c6abfca-43d4-49f9-8bce-2310e2e1bb2e.png?bf=0&f=jpg&p=true&q=85&w=312"
+                    alt="">
+                <div class="centered img-card-margin-bottom-in-minus"><p>Can't Miss</p></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
