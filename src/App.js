@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import {Home} from './Home.jsx';
+import Premium from './components/premium/Premium';
+
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <h1>hello</h1>
+     <Premium/>
     </div>
   );
 }
