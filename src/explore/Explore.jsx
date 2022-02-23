@@ -2,7 +2,7 @@
 import "./explore.css";
 import React from "react";
 import styled from "styled-components";
-
+import {Footer} from '../footer/Footer.jsx';
 export const Explore=()=>{
 
 
@@ -51,10 +51,9 @@ export const Explore=()=>{
          <img src="https://ap2-prod-images.disco-api.com/2021/04/01/9f3bf0c9-acab-4033-b072-97f6d02c6843.png?bf=0&f=jpg&p=true&q=85&w=260"/>
        </div>
     </div>
-
-
-
-        </Explorediv>
+    <Footer/>
+    </Explorediv>
+   
     )
 };
 
