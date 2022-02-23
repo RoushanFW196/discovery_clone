@@ -1,0 +1,33 @@
+.login{
+    background-color: rgb(18,19,23);
+    color: white;
+    /* height: 500px; */
+    padding: 50px;
+}
+.method{
+    text-align: center;
+    margin-top: 75px;
+}
+.method > button{
+    cursor: pointer;
+    padding: 15px;
+    width: 25%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#signin:hover{
+    background-color: rgb(33,117,217);
+    color: white;
+    transition: ease .3s all;
+}
+.method > button > span > img{
+    width: 40px;
+    margin-bottom: -3px;
+}
+#email, #pass, #name{
+    padding: 15px;
+    width: 22.5%;
+}
+#errmsg{
+    color: red;
+}
