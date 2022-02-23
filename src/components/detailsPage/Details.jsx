@@ -1,4 +1,5 @@
 import "./Details.css";
+import { useState } from "react";
 import { Image } from "./Image";
 let info = {
   url: "https://bit.ly/3sdtyyB",
@@ -10,6 +11,7 @@ let info = {
   languages: ["Telugu", "Malyalam", "Hindi", "English", "Kannada", "Tamil"],
 };
 export const Details = () => {
+  const [episodes, setEpisodes] = useState(true);
   return (
     <div className="whole-cont">
       <div className="imgcont">

@@ -29,6 +29,7 @@
     display: flex;
     width: 100%;
     margin-top: 10px;
+    border-bottom: 1px solid gray;
 }
 
 .left-cont {
