@@ -1,5 +1,5 @@
  import React from "react";
- import {Explore} from "./explore/Explore.jsx";
+ import {Explore} from "./components/explore/Explore.jsx";
  
  export const Home=()=>{
      return(
