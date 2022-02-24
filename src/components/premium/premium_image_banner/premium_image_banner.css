@@ -1,0 +1,46 @@
+/* .secHead {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 1%;
+} */
+
+.image-banner {
+  width: 90%;
+  margin: auto;
+  background-color: #262931;
+}
+
+.image-banner-grid {
+  /* width: 95%; */
+  padding: 3% 3%;
+  margin: auto;
+  display: flex;
+  gap: 5%;
+}
+
+.image-banner-grid > div:nth-child(1) {
+  flex-basis: 40%;
+}
+
+.setCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setCenter h3 {
+  line-height: 0;
+}
+.setCenter h3,
+p {
+  text-align: left;
+  color: white;
+}
+.setCenter p {
+  font-size: 0.8em;
+  color: rgba(245, 245, 245, 0.801);
+}
+img {
+  width: 100%;
+  border-radius: 5px;
+}

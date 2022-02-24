@@ -1,0 +1,43 @@
+.premium_subscription_card{
+    background-color: #fff;
+    width: 380px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+.premium_subscription_card h4, p, button{
+    text-align: center;
+    padding: 0 25px;
+}
+
+.premium_subscription_card > div h4{
+   line-height: 0;
+   margin-top: 40px;
+   margin-bottom: 15px;
+}
+
+.premium_subscription_card p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: rgba(0, 0, 0, 0.603)
+}
+
+.premium_subscription_card button{
+    background-color: #247eea;
+    border: 0;
+    padding: 12px 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 0.7em;
+}
+
+.set-premium-subscription-card{
+    display: flex;
+    justify-content: center;
+    gap: 5%;    
+  }
