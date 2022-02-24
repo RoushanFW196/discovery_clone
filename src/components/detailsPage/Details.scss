@@ -1,6 +1,6 @@
 .whole-cont {
-    min-height: 545px;
-    max-width: 1108px;
+    min-height: 34.0625rem;
+    max-width: 69.25rem;
     margin: auto;
     position: relative;
     /* background-color: red; */
@@ -29,7 +29,8 @@
     display: flex;
     width: 100%;
     margin-top: 10px;
-    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(92, 92, 92);
 }
 
 .left-cont {
@@ -137,6 +138,9 @@ h1 {
 
 .top-buttons>button:hover {
     border: 1px solid white;
+    & p {
+        color: white;
+    }
 }
 
 .btncont {
@@ -156,10 +160,87 @@ h1 {
     color: gray;
 }
 
-.btncont>p:hover {
+// .btncont>p:hover {
+//     color: white;
+// }
+.rightbbttn {
+    margin-left: 4%;
+}
+
+.episode-headers {
+    height: 50px;
+    /* background-color: red; */
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+
+.episode-headers>div {
+    font-size: large;
+    /* text-decoration: solid; */
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.shorts-button {
+    border-bottom: 4px solid white;
+}
+
+.episodes-button {
+    color: gray;
+}
+
+.episodes-button:hover {
     color: white;
 }
 
-.rightbbttn {
-    margin-left: 4%;
+.episode-cont {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.episode-card {
+    // background-color: red;
+    width: 213px;
+}
+
+.episode-image {
+    background-size: contain;
+    border-radius: 5px;
+    height: 120px;
+    width: 213px;
+}
+
+.episode-image>svg {
+    margin: 5px;
+}
+
+.timestamp {
+    background-color: rgba(54, 54, 54, 0.507);
+    height: 15px;
+    width: 27px;
+    margin-top: 30%;
+    margin-left: 85%;
+    font-size: 10px;
+}
+
+.episode-image:hover {
+    & .timestamp {
+        display: none;
+    }
+}
+
+.episode-details {
+    h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-top: 5px;
+        font-size: smaller;
+    }
 }
