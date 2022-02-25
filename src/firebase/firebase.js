@@ -18,15 +18,6 @@ export const db = firebase.firestore();
 // export const storage = firebase.storage()
 export const auth = app.auth()
 
-// auth.languageCode = 'it';
-// window.recaptchaVerifier = new RecaptchaVerifier('sign-in-button', {
-//     'size': 'invisible',
-//     'callback': (response) => {
-//       // reCAPTCHA solved, allow signInWithPhoneNumber.
-//       onSignInSubmit();
-//     }
-//   }, auth);
-
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
   
 export default app;

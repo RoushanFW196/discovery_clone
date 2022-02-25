@@ -1,0 +1,40 @@
+.single-video-heading {
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding-bottom: 3%;
+    text-align: center;
+  }
+  
+  .single-videoHead {
+    padding-top: 6%;
+    /* text-align: center; */
+  }
+  
+  .single-videoHead2 {
+    padding-top: 10%;
+  }
+  .single-videoHead3 {
+    padding-top: 8%;
+  }
+  
+  .set-videoPlayer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+  
+  .premium-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .premium_qoutes_card_flex_set {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 5%;
+  }

@@ -49,7 +49,7 @@ export const Login = () => {
                     <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" />
                 </span>Sign In With Google</button>
 
-            <p><Link to="../signup">Create Account</Link></p>    
+            <p><Link id="create" to="../signup">Create Account</Link></p>    
         </div>
     </div>
 }

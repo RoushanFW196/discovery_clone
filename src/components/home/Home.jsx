@@ -1,13 +1,49 @@
+import { useEffect } from 'react';
 import Carousel from 'react-elastic-carousel'
-import { Playbtn } from '../playbutton/Playbtn';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/authContext';
+import { getdata } from '../../redux/actions/data';
+import { getvideo } from '../../redux/actions/video';
+import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
+import { Text } from '../videoDetails/Textvideo';
+import "./home.css"
 
 export const Home = () => {
+    const dispatch = useDispatch();
+    const {user} = useAuth()
+    const navigate = useNavigate()
+    const { loading,error, errorMessage, data, video } = useSelector((state) => ({
+        loading: state.dataState.loading,
+        error: state.dataState.error,
+        errorMessage: state.dataState.errorMessage,
+        data: state.dataState.data,
+        video: state.videoState.video
+      }));
+
+    //   console.log(error, errorMessage);
+    console.log("vide", video);
+    // console.log(data);
+    useEffect(() => {
+        dispatch(getdata("home"))
+    }, []);
+
+    const handleSubmit = (video) => {
+        dispatch(getvideo(video))
+        if(user){
+            navigate("../details")
+        }else{
+            navigate("../login")
+        }
+    }
+    
+
     const breakPoints = [
-        {width: 1, itemsToShow:1},
-        {width: 500, itemsToShow:2},
-        {width: 768, itemsToShow:3},
+        {width: 1, itemsToShow:2},
+        {width: 500, itemsToShow:3},
+        {width: 768, itemsToShow:4},
         {width: 1200, itemsToShow:5}
       ];
     return <div>
@@ -29,6 +65,24 @@ export const Home = () => {
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/83f75fdc-5ae5-4fda-9f28-f6e4813bcf45.jpeg?w=600&p=true&q=75"/>
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/131b26fd-0931-4719-8866-132a458eafd8.jpeg?w=600&p=true&q=75"/>
         </Carousel>
+        {/* <Text /> */}
+
+        <div className='data'>
+            {loading && <img id='spin' src='/images/spin-loader.gif'/>}
+            {data && data.map((e, i) => {
+                return <div id='container-data'> 
+                    <div key={i}  onClick={(() => {
+                    handleSubmit(e)
+                })}>
+                    <div id="play1"><PlaybtnVideo/></div>
+
+                    <img id='thumb' src={e.thumbnail}/>
+                    <h2 id='title'>{e.title}</h2>
+                    {/* <p>{e.description}</p>  */}
+                </div>
+               </div>   
+            })}
+        </div>
 
         {/* <Playbtn /> */}
 

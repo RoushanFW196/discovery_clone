@@ -28,6 +28,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     /* background-color: red; */
+    color: whitesmoke;
     margin-left: 4%;
     cursor: pointer;
 }

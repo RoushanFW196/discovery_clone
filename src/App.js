@@ -7,7 +7,8 @@ import { Home } from './components/home/Home'
 import { Explore } from './components/explore/Explore'
 import { Kids } from './components/kids/Kids'
 import { Mindblown } from './components/mindblown/Mindblown'
-import { Premium } from './components/premium/Premium'
+import  Premium  from './components/premium/Premium'
+import { Details } from './components/videoDetails/Details'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/premium' element={<Premium/>}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
+        <Route path='/details' element={<Details />}></Route>
       </Routes>
       {/* <Login /> */}
       {/* <Signup /> */}

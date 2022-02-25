@@ -1,0 +1,46 @@
+/* -----------------videos data-------------- */
+#spin{
+    margin-left: 166.5%;
+    margin-top: 125px;
+}
+/* #container-data{
+    padding: 80px;
+} */
+.data{
+    padding: 50px;
+    margin-left: -13px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#container-data{
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#title{
+    display: none;
+    margin-top: -50px;
+}
+#thumb{
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* #container-data:hover #title{
+    display: block;
+} */
+
+/* -----------playbutton-------------- */
+#play1 {
+    display: none;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* background-color: red; */
+    color: whitesmoke;
+    margin-left: 11%;
+    margin-top: 86px;
+    cursor: pointer;
+}
+#container-data:hover #play1{
+    display: block;
+}

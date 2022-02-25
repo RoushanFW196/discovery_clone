@@ -24,6 +24,7 @@ export const Signup = () => {
     }, [user]);
     const checkUser = ()=>{
         if(user){
+            alert("Your account created successfully")
             navigate("../")
         }
     }
@@ -31,7 +32,6 @@ export const Signup = () => {
   function handleSubmit(e) {
       e.preventDefault()
         dispatch(createAccount(emailRef.current.value, passwordRef.current.value)) 
-        alert("Your account created successfully")
     }
     const signInGoogle = ()=>{
       dispatch(signInWithGoogle())
@@ -39,7 +39,7 @@ export const Signup = () => {
 
     return <div className="login">
         {/* <img className="dislogo" src="https://www.discoveryplus.in/129c5de772422db12a69e397768bd8ec.png" /> */}
-        <div className="method">
+        <div className="method meth">
             <h1>Sign Up Now</h1>
             <p>Save your preferences & discover great</p>
             <p>recommendations</p>

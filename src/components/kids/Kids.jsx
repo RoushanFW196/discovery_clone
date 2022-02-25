@@ -1,9 +1,41 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/authContext';
+import { getdata } from '../../redux/actions/data';
+import { getvideo } from '../../redux/actions/video';
 import Carousel from 'react-elastic-carousel'
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
 import "./kids.css"
 
 export const Kids = () => {
+    const dispatch = useDispatch();
+    const {user} = useAuth()
+    const navigate = useNavigate()
+    const { loading,error, errorMessage, data, video } = useSelector((state) => ({
+        loading: state.dataState.loading,
+        error: state.dataState.error,
+        errorMessage: state.dataState.errorMessage,
+        data: state.dataState.data,
+        video: state.videoState.video
+      }));
+
+    //   console.log(error, errorMessage);
+    console.log("vide", video);
+    // console.log(data);
+    useEffect(() => {
+        dispatch(getdata("kids"))
+    }, []);
+
+    const handleSubmit = (video) => {
+        dispatch(getvideo(video))
+        if(user){
+            navigate("../details")
+        }else{
+            navigate("../login")
+        }
+    }
     const breakPoints = [
         {width: 1, itemsToShow:1},
         {width: 500, itemsToShow:2},
@@ -28,6 +60,23 @@ export const Kids = () => {
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/06/01/db4270d4-03ca-4859-9d78-2d80f324a9d0.png?w=600&p=true&q=75"/>
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/02/10/41ba5603-8c9b-4827-bc86-e005151ae284.png?w=600&p=true&q=75"/>
         </Carousel>
+
+        <div className='data'>
+            {loading && <img id='spin' src='/images/spin-loader.gif'/>}
+            {data && data.map((e, i) => {
+                return <div id='container-data'> 
+                    <div key={i}  onClick={(() => {
+                    handleSubmit(e)
+                })}>
+                    <img id='thumb' src={e.thumbnail}/>
+                    <h2 id='title'>{e.title}</h2>
+                    {/* <p>{e.description}</p>  */}
+                </div>
+               </div>   
+            })}
+        </div>
+
+        
         <h2 className='title1'>Everyone's Watching</h2>
         <div className='grid'>
             <img src='https://ap2-prod-images.disco-api.com/2021/02/10/8efb9e9b-5e86-4071-9f81-b40b41d0f795.jpeg?bf=0&f=jpg&p=true&q=85&w=600'/>

@@ -1,6 +1,6 @@
 .navbar{
-    /* border: 1px solid blue; */
-    /* background-color: rgb(18,19,23); */
+  /* border: 1px solid blue; */
+    background-color: rgb(18,19,23);
     padding: 29px 60px 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -13,18 +13,18 @@
       background-color: rgb(161,162,163); */
   }
   .dislogo{
-    width: 234px;
-      height: 50px;
-      margin-top: -14px;
-      margin-left: 20px;
-      cursor: pointer;
+    width: 173px;
+    height: 35px;
+    margin-top: -5px;
+    margin-left: 20px;
+    cursor: pointer;
   }
   .flex{
     display: flex;
   }
   .flex > a{
-    margin-left: 40px;
-    font-size: 19px;
+    margin-left: 30px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(161,162,163);
     text-decoration: none;
@@ -35,6 +35,7 @@
   }
   .f1{
     gap: 15px;
+    margin-left: 55px;
   }
   .f1 > button{
     background-color: rgb(33,117,217);
@@ -55,6 +56,7 @@
     border-bottom: 2px solid rgb(161,162,163);
     font-size: 16px;
     background-color: rgb(18,19,23);
+    color: rgb(161,162,163);
     background-image: url(https://prodstatic.shoppersstop.com/_ui/responsive/common/assets/images/iconsearch.png);
     background-position: 300px 1px;
     background-repeat: no-repeat;
