@@ -2,89 +2,21 @@ import React from "react";
 import "./discovery_grid.css";
 import Premium_carousel from "../premium_carousel/Premium_carousel.js"
 import Premium_single_video from "../premium-single-video/Premium_single_video.js"
-// import MyVideo from "../premium-single-video/myV.mp4"
-
+import Grid_compo from "./Grid_compo.js"
 
 function Discovery_grid() {
   return (
     <div className="discoveryGrid">
-        <div className="white-space-margin"></div>
-        <h2 className="first-head">Get It All With discovery+</h2>
-      <div className="main">
-        <div>
-          <div className="container">
-            <img
-              className="image-margin"
-              src="https://ap2-prod-images.disco-api.com/2021/12/21/1ba9e855-0426-462b-bcfd-6667ca51b99b.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom">
-              <p className="premium-grid-titleTag">Binge</p>
-            </div>
-          </div>
-          <div className="container">
-            <img
-              src="https://ap2-prod-images.disco-api.com/2021/12/21/9999c652-3e08-46ce-8b83-d4d7e01c3497.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom-in-minus">
-              <p className="premium-grid-titleTag">Browse</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <img
-              className="image-margin"
-              src="https://ap2-prod-images.disco-api.com/2021/12/21/e3d5f3d0-4acc-4a46-b3bc-646f832b9326.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom">
-              <p className="premium-grid-titleTag">Watch</p>
-            </div>
-          </div>
-          <div className="container">
-            <img
-              src="https://ap2-prod-images.disco-api.com/2021/12/21/a5b80ce1-4659-4977-b5dc-cdbf9c03641c.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom-in-minus">
-              <p className="premium-grid-titleTag">Find</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <img
-              src="https://ap2-prod-images.disco-api.com/2021/12/21/b8c2ea45-9c74-4005-9f7e-4a8d447a98eb.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom-in-minus">
-              <p className="premium-grid-titleTag">Stream</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container">
-            <img
-              className="image-margin"
-              src="https://ap2-prod-images.disco-api.com/2022/1/3/3fbd93c4-e18d-4238-ac5f-dab703206b00.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom">
-              <p className="premium-grid-titleTag">Enjoy</p>
-            </div>
-          </div>
-          <div className="container">
-            <img
-              src="https://ap2-prod-images.disco-api.com/2022/1/3/1c6abfca-43d4-49f9-8bce-2310e2e1bb2e.png?bf=0&f=jpg&p=true&q=85&w=312"
-              alt=""
-            />
-            <div className="centered img-card-margin-bottom-in-minus">
-              <p className="premium-grid-titleTag">Can't Miss</p>
-            </div>
-          </div>
-        </div>
+        <h1 id="grid_head">Get It All With discovery+</h1>
+      <div id="grid_main">
+
+       <Grid_compo src1="https://ap2-prod-images.disco-api.com/2021/12/21/1ba9e855-0426-462b-bcfd-6667ca51b99b.png?bf=0&f=jpg&p=true&q=85&w=312" src2="https://ap2-prod-images.disco-api.com/2021/12/21/9999c652-3e08-46ce-8b83-d4d7e01c3497.png?bf=0&f=jpg&p=true&q=85&w=312" pTag1="Binge" pTag2="Browse" pTag_hidden1="New & Classic Hit Shows" pTag_hidden2="Show of Every Genre"/>
+       
+       <Grid_compo src1="https://ap2-prod-images.disco-api.com/2021/12/21/e3d5f3d0-4acc-4a46-b3bc-646f832b9326.png?bf=0&f=jpg&p=true&q=85&w=312" src2="https://ap2-prod-images.disco-api.com/2021/12/21/a5b80ce1-4659-4977-b5dc-cdbf9c03641c.png?bf=0&f=jpg&p=true&q=85&w=312" pTag1="Watch" pTag2="Find" pTag_hidden1="HGTV, Food Network, TLC, ID, and more" pTag_hidden2="New Shows All The Time"/>
+
+       <Grid_compo src1="https://ap2-prod-images.disco-api.com/2021/12/21/b8c2ea45-9c74-4005-9f7e-4a8d447a98eb.png?bf=0&f=jpg&p=true&q=85&w=312" s pTag1="Stream" pTag_hidden1="BBC & Natural History Collections"/>
+
+        <Grid_compo src1="https://ap2-prod-images.disco-api.com/2022/1/3/3fbd93c4-e18d-4238-ac5f-dab703206b00.png?bf=0&f=jpg&p=true&q=85&w=312" src2="https://ap2-prod-images.disco-api.com/2022/1/3/1c6abfca-43d4-49f9-8bce-2310e2e1bb2e.png?bf=0&f=jpg&p=true&q=85&w=312" pTag1="Enjoy" pTag2="Can't Miss" pTag_hidden1="Your Favourite Celebrities" pTag_hidden2="Exclusive discovery+ Originals"/>
       </div>
 
       <div className="flex-main">
