@@ -1,0 +1,62 @@
+#mindblown-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  gap: 1.5%;
+  justify-content: center;
+  padding: 0 3%;
+  grid-row-gap: 1%;
+}
+
+.mindblown-compo {
+  position: relative;
+  opacity: 0.9;
+  width: 30vw;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.mindblown-compo:hover {
+  opacity: 1;
+}
+
+.compo-text-h4 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: 800;
+}
+
+.mindblown-compo:hover .compo-text-h4 {
+  color: black;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 42px;
+  left: 10px;
+  color: white;
+}
+
+.compo-text-p {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 10px;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.699);
+  width: 60%;
+  text-align: left;
+  line-height: 1;
+  
+}
+
+.mindblown-compo:hover .compo-text-p {
+  display: inline;
+}
