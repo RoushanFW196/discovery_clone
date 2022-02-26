@@ -105,7 +105,7 @@ export const Details = () => {
               <h1>{info.heading}</h1>
             </div>
           </div>
-          <p>
+          <p className="details-p-Tag">
             {/* {info.tags[0]}&nbsp;{info.tags[1]} */}
             {info.tags.map((e) => (
               <span>
