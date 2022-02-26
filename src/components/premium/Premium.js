@@ -2,8 +2,21 @@ import React from "react";
 import "./premium.css";
 import percent from "./percent.png";
 import Discovery_grid from "./grid/Discovery_grid"
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/authContext";
+import { Link } from "react-router-dom";
 
 function premium() {
+  const {user} = useAuth()
+  const navigate = useNavigate()
+
+  const handleSubmit = () => {
+    if(user){
+        navigate("../payment")
+    }else{
+        navigate("../login")
+    }
+}
   return (
    <>
     <div className="premium-box">
@@ -40,7 +53,10 @@ function premium() {
         </div>
 
         <div className="subscribe-div">
-          <p>Subscribe Now</p>
+          {/* <p><Link className="subcription-premium-aTag" to="../payment">Subscribe Now</Link></p> */}
+          <p onClick={(() => {
+            handleSubmit()
+          })}>Subscribe Now</p>
         </div>
       </div>
     </div>

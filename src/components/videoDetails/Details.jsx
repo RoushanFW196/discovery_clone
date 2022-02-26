@@ -105,8 +105,8 @@ export const Details = () => {
     <div className="whole-cont">
       <div className="imgcont">
         {/* hello world */}
-        <img id="image_1" src={info.url} />
-        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/nmRbNHYCzmU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        {/* <img id="image_1" src={info.url} /> */}
+        <iframe width="1110" height="623" src={video.link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
       <div className="details-cont">
         <div className="left-cont">
@@ -118,7 +118,7 @@ export const Details = () => {
               <h1>{info.heading}</h1>
             </div>
           </div>
-          <p>
+          <p className="detals-pTag">
             {/* {info.tags[0]}&nbsp;{info.tags[1]} */}
             {info.tags.map((e) => (
               <span>
@@ -140,8 +140,8 @@ export const Details = () => {
             </svg>
             <h6 className="">Watch Now</h6>
           </button>
-          <p>{info.description}</p>
-          <p>
+          <p className="detals-pTag">{info.description}</p>
+          <p className="detals-pTag">
             Age Rating: {info.agerating} | Contains: {info.contains}
           </p>
         </div>
@@ -200,11 +200,11 @@ export const Details = () => {
             </button>
           </div>
           <div className="languages">
-            <p className="flex">
+            <p className="flex details-pTag">
               <text className="languages-text">Languages </text>{" "}
               <div className="flex-wrap">
                 {info.languages.map((e) => (
-                  <p>{e}&nbsp;</p>
+                  <p className="detals-pTag">{e}&nbsp;</p>
                 ))}
               </div>
             </p>
@@ -276,12 +276,12 @@ export const Details = () => {
                     </g>
                   </svg>
                   <div className="timestamp">
-                    <p>{e.duration}</p>
+                    <p className="detals-pTag">{e.duration}</p>
                   </div>
                 </div>
                 <div className="episode-details">
                   <h4>{e.name}</h4>
-                  <p>{e.description}</p>
+                  <p className="detals-pTag">{e.description}</p>
                 </div>
               </div>
             ))}
@@ -353,12 +353,12 @@ export const Details = () => {
                     </g>
                   </svg>
                   <div className="timestamp">
-                    <p>{e.duration}</p>
+                    <p className="detals-pTag">{e.duration}</p>
                   </div>
                 </div>
                 <div className="episode-details">
                   <h4>{e.name}</h4>
-                  <p>{e.description}</p>
+                  <p className="detals-pTag">{e.description}</p>
                 </div>
               </div>
             ))}

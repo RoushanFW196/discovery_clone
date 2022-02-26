@@ -4,7 +4,8 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BiPhoneCall } from 'react-icons/bi';
 import { MdLocationOn } from 'react-icons/md';
 import { IoLogoYoutube } from 'react-icons/io';
-import { AiFillFacebook } from 'react-icons/ai';
+// import { AiFillFacebook } from 'react-icons/ai';
+import { FaFacebook } from 'react-icons/fa';
 
 function Footer() {
   return (  
@@ -33,7 +34,7 @@ function Footer() {
                           <div className="footer-social-desc ">Follow us</div>
                           <div className="footer-flex">
                           <IoLogoYoutube id="yt-icon" className="footer-icon-right"/> 
-                          <AiFillFacebook id="fb-icon" className="footer-icon-right"/> 
+                          <FaFacebook id="fb-icon" className="footer-icon-right"/> 
                           </div>
                         </div>
                         <div className="footer-block">

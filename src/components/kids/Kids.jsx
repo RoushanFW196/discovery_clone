@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/authContext';
 import { getdata } from '../../redux/actions/data';
 import { getvideo } from '../../redux/actions/video';
+import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import Carousel from 'react-elastic-carousel'
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
@@ -68,7 +69,9 @@ export const Kids = () => {
                     <div key={i}  onClick={(() => {
                     handleSubmit(e)
                 })}>
-                    <img id='thumb' src={e.thumbnail}/>
+                    <div id="play1"><PlaybtnVideo/></div>
+
+                    <img id='thumb-kids' src={e.thumbnail}/>
                     <h2 id='title'>{e.title}</h2>
                     {/* <p>{e.description}</p>  */}
                 </div>

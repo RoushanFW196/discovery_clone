@@ -13,11 +13,13 @@
 #grid_head {
   padding-top: 3%;
   padding-bottom: 2.2%;
+  text-align: center;
 }
 
 .secHead {
   padding-top: 5%;
   padding-bottom: 1%;
+  text-align: center;
 }
 
 #grid_main {
@@ -29,10 +31,15 @@
 
 .image-margin {
   margin-bottom: 14%;
+  border-radius: 10px;
+}
+.image-margin2{
+  border-radius: 10px;
 }
 
 .container {
   position: relative;
+  cursor: pointer;
 }
 
 .centered {

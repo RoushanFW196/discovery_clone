@@ -25,9 +25,10 @@
     cursor: pointer;
     border-radius: 5px;
 }
-/* #container-data:hover #title{
+#container-data:hover #title{
     display: block;
-} */
+    text-align: center;
+}
 
 /* -----------playbutton-------------- */
 #play1 {

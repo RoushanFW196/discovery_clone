@@ -1,7 +1,7 @@
 .premium_subscription_card{
     background-color: #fff;
-    width: 380px;
-    height: 230px;
+    width: 22em;
+    height: 13em;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
@@ -10,20 +10,22 @@
 
 #premium-btn-h4, p, #subcription-premium-btn{
     text-align: center;
-    padding: 0 25px;
+    padding: 0 18px;
 }
 
 #premium-btn-h4{
    color: black;
    line-height: 0;
-   margin-top: 40px;
+   margin-top: 1.3em;
    margin-bottom: 15px;
+   font-size: 22px;
 }
 
 .premium_subscription_card p{
     margin-top: 10px;
     margin-bottom: 25px;
-    color: rgba(0, 0, 0, 0.603)
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.603);
 }
 
 #subcription-premium-btn{
@@ -36,8 +38,9 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 20px;
-    font-size: 0.7em;
+    /* margin-bottom: 20px; */
+    font-size: 1em;
+    cursor: pointer;
 }
 
 .set-premium-subscription-card{

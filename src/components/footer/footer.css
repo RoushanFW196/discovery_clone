@@ -4,8 +4,10 @@
 }
 
 .footer footer {
+  /* border: 3px solid blue; */
   width: 98%;
   margin: auto;
+  margin-left: 0.9em;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -40,6 +42,7 @@
 .footer-description >p{
     text-align: left;
     padding-left:0;
+    color: rgba(255, 255, 255, 0.507);
 }
 .footer-description a{
    color: rgba(255, 255, 255, 0.507);
@@ -54,15 +57,24 @@
 
 .footer-icon-right{
   margin-right: 8px;
-  font-size: 45px;
+  margin-top: 2px;
+  /* font-size: 45px; */
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
   color: rgba(255, 255, 255, 0.507);
+  background-color: rgb(49,55,64);
+  cursor: pointer;
 }
 
 #yt-icon:hover{
-  color: rgba(255, 0, 0, 0.842)
+  /* color: rgb(254,1,1) */
+  background-color: rgb(254,1,1);
+  color: white;
 }
 #fb-icon:hover{
   color: #2175d9;
+  background-color: white;
 }
 
 .footer-social-desc{
@@ -111,6 +123,9 @@
 .flex-half-left > p {
   cursor: pointer;
 }
+.footer-hover-color{
+  color: rgba(255, 255, 255, 0.507);
+}
 
 .footer-hover-color:hover {
   color: white;
@@ -123,5 +138,6 @@
   justify-content: end;
 }
 .flex-half-right > p {
+  color: rgba(255, 255, 255, 0.507);
   padding-right: 0;
 }

@@ -1,9 +1,59 @@
-import React from "react";
+// import React from "react";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/authContext';
+import { getdata } from '../../redux/actions/data';
+import { getvideo } from '../../redux/actions/video';
+import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import Mb_compo from "./mb-compo/Mb_compo.js";
 
 function Mindblown() {
+  const dispatch = useDispatch();
+    const {user} = useAuth()
+    const navigate = useNavigate()
+    const { loading,error, errorMessage, data, video } = useSelector((state) => ({
+        loading: state.dataState.loading,
+        error: state.dataState.error,
+        errorMessage: state.dataState.errorMessage,
+        data: state.dataState.data,
+        video: state.videoState.video
+      }));
+
+    //   console.log(error, errorMessage);
+    console.log("vide", video);
+    // console.log(data);
+    useEffect(() => {
+        dispatch(getdata("mindblown"))
+    }, []);
+
+    const handleSubmit = (video) => {
+        dispatch(getvideo(video))
+        if(user){
+            navigate("../details")
+        }else{
+            navigate("../login")
+        }
+    }
   return (
     <>
+       <div className='data'>
+            {loading && <img id='spin' src='/images/spin-loader.gif'/>}
+            {data && data.map((e, i) => {
+                return <div id='container-data'> 
+                    <div key={i}  onClick={(() => {
+                    handleSubmit(e)
+                })}>
+                  <div id="play1"><PlaybtnVideo/></div>
+
+                    <img id='thumb-mindblown' src={e.thumbnail}/>
+                    <h2 id='title'>{e.title}</h2>
+                    {/* <p>{e.description}</p>  */}
+                </div>
+               </div>   
+            })}
+        </div>
+        <h2 id='mindblown-centerHead'>Mindblown</h2>
       <div id="mindblown-grid">
         <div>
           <Mb_compo

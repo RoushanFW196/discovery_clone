@@ -13,9 +13,9 @@ function Premium_single_video() {
     "https://ap2-prod-images.disco-api.com/2021/12/06/249df7c5-ffec-3054-b6dc-863e730c4696.jpeg?bf=0&f=jpg&p=true&q=85&w=1300";
   return (
     <div>
-      <h2 className="single-video-heading single-videoHead">
+      <h1 className="single-video-heading single-videoHead">
         Get Access To discovery+ Exclusive Originals
-      </h2>
+      </h1>
 
       <VideoPlayer
         className="set-videoPlayer"
@@ -23,22 +23,22 @@ function Premium_single_video() {
         poster={poster}
         width={1225}
       />
-      <h2 className="single-video-heading single-videoHead2">
+      <h1 id="primium-bigHead" className="single-video-heading single-videoHead2">
         Stream on your preferred devices from Android, iOS to Amazon Fire Stick
         and Android TV, Samsung TV and LG TV
-      </h2>
+      </h1>
       <img
         src="https://ap2-prod-images.disco-api.com/2021/12/21/247d5db3-309d-44c3-8a70-8479dea55cb4.jpg?bf=0&f=jpg&p=true&q=85&w=1400"
         alt=""
       />
-      <h2 className="single-video-heading single-videoHead3">
+      <h1 className="single-video-heading single-videoHead3">
         A Safe Place for Kids Entertainment and Learning
-      </h2>
+      </h1>
       <img
         src="https://ap2-prod-images.disco-api.com/2021/12/21/bf797987-4983-4820-94af-f06dfe5ed493.jpg?bf=0&f=jpg&p=true&q=85&w=1400"
         alt=""
       />
-      <h2 className="single-video-heading">Exclusive Premium Benefits</h2>
+      <h1 className="single-video-heading">Exclusive Premium Benefits</h1>
       <img className="premium-table" src={Table} alt="" />
       <div className="set-premium-subscription-card"> 
         <Subscription_card
