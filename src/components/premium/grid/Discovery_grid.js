@@ -33,7 +33,7 @@ function Discovery_grid() {
       <img src="https://ap2-prod-images.disco-api.com/2020/09/06/a363a4f2-d346-45f7-91b3-e9067c53d4ea.png?bf=0&f=png&p=true&q=85&w=150" alt="" />
       <img src="https://ap2-prod-images.disco-api.com/2020/12/16/d7e67400-9a56-4943-9056-94d4686566b1.png?bf=0&f=png&p=true&q=85&w=150" alt="" />
       </div>
-      <h2 className="secHead">Thousands of Premium Shows</h2>
+      <h1 className="secHead">Thousands of Premium Shows</h1>
       <Premium_carousel/>
       <Premium_single_video/>
     </div>
