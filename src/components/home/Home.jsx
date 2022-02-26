@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/authContext';
 import { getdata } from '../../redux/actions/data';
 import { getvideo } from '../../redux/actions/video';
+import Footer from '../footer/Footer';
 import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
@@ -186,5 +187,7 @@ export const Home = () => {
             <img src='https://ap2-prod-images.disco-api.com/2021/01/08/34ebc9e5-45b2-430a-bcfb-e92ceabc9de6.jpeg?bf=0&f=jpg&p=true&q=85&w=600'/>
             <img src='https://ap2-prod-images.disco-api.com/2020/12/24/e13eb912-9c97-4f53-9dcc-993ca19bb919.jpeg?bf=0&f=jpg&p=true&q=85&w=600'/>
         </div>
+
+        <Footer />
     </div>
 }

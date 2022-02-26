@@ -11,6 +11,7 @@ import  Footer  from './components/footer/Footer'
 import  Premium  from './components/premium/Premium'
 import { Details } from './components/videoDetails/Details'
 import { Payment } from './components/payment/Payment'
+import { Shorts } from './components/shorts/Shorts'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path='/explore' element={<Explore/>}></Route>
         <Route path='/kids' element={<Kids/>}></Route>
+        <Route path="/shorts" element={<Shorts/>}></Route>
         <Route path='/mindblown' element={<Mindblown/>}></Route>
         <Route path='/premium' element={<Premium/>}></Route>
         <Route path='/login' element={<Login />}></Route>
@@ -27,10 +29,8 @@ function App() {
         <Route path='/details' element={<Details />}></Route>
         <Route path='/payment' element={<Payment />}></Route>
       </Routes>
-      <Footer />
-      {/* <Login /> */}
-      {/* <Signup /> */}
-      {/* <Payment /> */}
+      {/* <Footer /> */}
+      {/* <Shorts /> */}
     </div>
   )
 }

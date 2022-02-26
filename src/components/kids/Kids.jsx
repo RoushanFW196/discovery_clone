@@ -9,6 +9,7 @@ import Carousel from 'react-elastic-carousel'
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
 import "./kids.css"
+import Footer from '../footer/Footer';
 
 export const Kids = () => {
     const dispatch = useDispatch();
@@ -169,5 +170,6 @@ export const Kids = () => {
             <img src='https://ap2-prod-images.disco-api.com/2021/05/10/87df39ed-c16b-45b8-a1eb-98c6215aecea.jpeg?bf=0&f=jpg&p=true&q=85&w=600'/>
         </div>
         
+        <Footer />
     </div>
 }

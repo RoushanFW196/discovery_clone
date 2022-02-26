@@ -1,10 +1,16 @@
 import {MdKeyboardBackspace} from "react-icons/md";
 import {MdOutlineSecurity} from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/authContext";
+import { useEffect } from "react";
 import './payment.css';
 
 export const Payment = () => {
     const navigate = useNavigate()
+    const {user} = useAuth()
+    useEffect(() => {
+        !user && navigate('../')
+      }, [user])
     return <div id="payment-main-div">
         <div className="payment-flex-div payment-flex-first">
             <MdKeyboardBackspace id="payment-backArrow"/>

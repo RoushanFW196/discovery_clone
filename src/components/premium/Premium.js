@@ -5,6 +5,7 @@ import Discovery_grid from "./grid/Discovery_grid"
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 import { Link } from "react-router-dom";
+import Footer from "../footer/Footer";
 
 function premium() {
   const {user} = useAuth()
@@ -61,6 +62,8 @@ function premium() {
       </div>
     </div>
     <Discovery_grid/>
+
+    <Footer/>
    </>
   );
 }

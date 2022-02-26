@@ -23,8 +23,9 @@
     display: flex;
   }
   .flex > a{
-    margin-left: 30px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 17px;
+    margin-top: 2px;
     font-weight: 600;
     color: rgb(161,162,163);
     text-decoration: none;

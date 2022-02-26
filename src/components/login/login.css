@@ -9,7 +9,7 @@
 }
 .method{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 17px;
 }
 .method > button{
     cursor: pointer;
@@ -43,5 +43,5 @@
     text-decoration: underline;
 }
 .meth{
-    margin-top: 0px;
+    margin-top: 8px;
 }

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/authContext';
 import { getdata } from '../../redux/actions/data';
 import { getvideo } from '../../redux/actions/video';
+import Footer from '../footer/Footer';
 import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import Mb_compo from "./mb-compo/Mb_compo.js";
 
@@ -202,7 +203,10 @@ function Mindblown() {
             title_hidden="A sneak peek into the world of our feathered friends."
           />
         </div>
+
+        {/* <Footer /> */}
       </div>
+      <Footer />
     </>
   );
 }

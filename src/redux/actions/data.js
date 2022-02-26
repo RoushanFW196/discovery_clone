@@ -1,6 +1,6 @@
 import { db } from "../../firebase/firebase"
-import "firebase/firestore";
-import firebase from "firebase/app"
+// import "firebase/firestore";
+// import firebase from "firebase/app"
 import {
   GETDATA_SUCCESS,
   GETDATA_LOADING,
