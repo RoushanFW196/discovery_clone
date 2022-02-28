@@ -46,7 +46,7 @@ SCSS
 
 ### Products Page
 
-[Products](https://i.imgur.com/lT5mYaI.png)
+![Products](https://i.imgur.com/lT5mYaI.png)
 
 # Getting Started with Create React App
 
