@@ -1,3 +1,23 @@
+# Discovery+ clone project
+This is a website cloning project we made during construct week of unit 5 of Masai School Web Development Course.
+## Team Members
+Roushan Kumar (https://github.com/RoushanFW196/) \
+Vipul Chodhari (https://github.com/Vipchoudhary13) \
+Mohammad Mohsin (https://github.com/mohsin19295) \
+Alimul Hassan (https://github.com/alhassan069) 
+
+## Tech Stack Used
+React \
+Redux \
+Firebase \
+CSS \
+SCSS 
+
+## Some of the pages of our project
+
+
+https://miro.medium.com/max/1400/1*XMRYsUpsntBkpltKPOFoHQ.png
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
