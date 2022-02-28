@@ -17,7 +17,16 @@ Firebase \
 CSS \
 SCSS
 
-## Screenshots
+## Added Functionalities
+
+<ul>
+  <li>SignIn, Login/Logout</li>
+  <li>Buy Premium Membership</li>
+  <li>Browse Videos</li>
+  <li>Watch Video</li>
+</ul>
+
+## Glimplse of our Web App
 
 ### Homepage
 
@@ -37,7 +46,7 @@ SCSS
 
 ### Products Page
 
-![Products](https://i.imgur.com/lT5mYaI.png)
+[Products](https://i.imgur.com/lT5mYaI.png)
 
 # Getting Started with Create React App
 
