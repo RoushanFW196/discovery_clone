@@ -49,12 +49,12 @@ export const Home = () => {
     return <div>
         {/* <Navbar /> */}
         <Carousel >
-                <Slider imgs="https://ap2-prod-images.disco-api.com/2022/02/03/75244632-39e6-4b12-b544-65d9f78c9de9.jpeg?w=600&p=true&q=75"/>
+                <Slider imgs="https://ap2-prod-images.disco-api.com/2022/02/03/75244632-39e6-4b12-b544-65d9f78c9de9.jpeg?w=600&p=true&q=75" />
                 <Slider imgs="https://ap2-prod-images.disco-api.com/2022/02/01/55364f91-61b7-4b85-9ad7-3fcccfd25192.jpeg?w=600&p=true&q=75"/>
                 <Slider imgs="https://ap2-prod-images.disco-api.com/2021/05/31/a69a221b-f00b-49e3-ae53-41ba6f04fa9c.jpeg?w=600&p=true&q=75"/>
         </Carousel>
         <Carousel breakPoints={breakPoints}>
-                <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/2a76ce95-fdcc-492d-b78e-42932a724e0f.jpeg?w=600&p=true&q=75"/>
+                <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/2a76ce95-fdcc-492d-b78e-42932a724e0f.jpeg?w=600&p=true&q=75"  />
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/d35919b6-0146-457d-b48e-ac101c134111.jpeg?w=600&p=true&q=75"/>
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/03/01/c7f3d702-f0a8-40e3-958c-955a9180affc.jpeg?w=600&p=true&q=75"/>
                 <Slider1 imgs="https://ap2-prod-images.disco-api.com/2021/07/01/58001170-51ce-474e-8dda-70f97c5a74f4.jpeg?w=600&p=true&q=75"/>
