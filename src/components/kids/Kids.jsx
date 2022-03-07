@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/authContext';
 import { getdata } from '../../redux/actions/data';
 import { getvideo } from '../../redux/actions/video';
+import { PlaybtnVideo } from '../playbutton/PlaybtnVideo';
 import Carousel from 'react-elastic-carousel'
 import { Slider } from '../slider/Slider'
 import { Slider1 } from '../slider/Slider1'
 import "./kids.css"
+import Footer from '../footer/Footer';
 
 export const Kids = () => {
     const dispatch = useDispatch();
@@ -68,7 +70,9 @@ export const Kids = () => {
                     <div key={i}  onClick={(() => {
                     handleSubmit(e)
                 })}>
-                    <img id='thumb' src={e.thumbnail}/>
+                    <div id="play1"><PlaybtnVideo/></div>
+
+                    <img id='thumb-kids' src={e.thumbnail}/>
                     <h2 id='title'>{e.title}</h2>
                     {/* <p>{e.description}</p>  */}
                 </div>
@@ -166,5 +170,6 @@ export const Kids = () => {
             <img src='https://ap2-prod-images.disco-api.com/2021/05/10/87df39ed-c16b-45b8-a1eb-98c6215aecea.jpeg?bf=0&f=jpg&p=true&q=85&w=600'/>
         </div>
         
+        <Footer />
     </div>
 }

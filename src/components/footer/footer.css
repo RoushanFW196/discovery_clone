@@ -1,0 +1,143 @@
+.footer {
+  background-color: #121317;
+  width: 100%;
+}
+
+.footer footer {
+  /* border: 3px solid blue; */
+  width: 98%;
+  margin: auto;
+  margin-left: 0.9em;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-block {
+  display: block;
+}
+
+.footer-hr{
+  border-top: 2.5px solid rgba(104, 103, 103, 0.363);
+
+}
+
+.footer-start-first-div{
+    height:120px;
+}
+
+.footer-end-first-div {
+  height: 170px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-description{
+    flex-basis: 69%;
+    flex-direction: column;
+}
+
+.footer-description >p{
+    text-align: left;
+    padding-left:0;
+    color: rgba(255, 255, 255, 0.507);
+}
+.footer-description a{
+   color: rgba(255, 255, 255, 0.507);
+   text-decoration: none;
+}
+.footer-description >p:nth-child(1){
+    margin-top:20px;
+}
+.footer-icon-left{
+  margin-right: 5px;
+}
+
+.footer-icon-right{
+  margin-right: 8px;
+  margin-top: 2px;
+  /* font-size: 45px; */
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.507);
+  background-color: rgb(49,55,64);
+  cursor: pointer;
+}
+
+#yt-icon:hover{
+  /* color: rgb(254,1,1) */
+  background-color: rgb(254,1,1);
+  color: white;
+}
+#fb-icon:hover{
+  color: #2175d9;
+  background-color: white;
+}
+
+.footer-social-desc{
+  margin-top: 15px;
+  text-align:left;
+  margin-left: 5px;
+  color:rgba(255, 255, 255, 0.507); 
+}
+
+.footer-social-icon-gap{
+  margin-bottom: 4px;
+}
+
+.footer-left-icon-div-block{
+  width: 138px;
+}
+
+.footer-app-store-icon2{
+  width:130px;
+  height:40px;
+}
+.footer-app-store-icon1{
+  width:150px;
+  margin: -55px 0 -55px -10px
+}
+.footer-app-store-icon2:hover{
+  display:block;
+  width:135px;
+  height: 42px;
+}
+.footer-app-store-icon1:hover{
+  display:block;
+  width:155px;
+}
+
+.flex-half-left, .flex-half-right {
+  width: 50%;
+  display: flex;
+}
+
+ p {
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 14px;
+}
+
+.flex-half-left > p {
+  cursor: pointer;
+}
+.footer-hover-color{
+  color: rgba(255, 255, 255, 0.507);
+}
+
+.footer-hover-color:hover {
+  color: white;
+}
+.flex-half-left > p:nth-child(1) {
+  padding-left: 0;
+}
+
+.flex-half-right {
+  justify-content: end;
+}
+.flex-half-right > p {
+  color: rgba(255, 255, 255, 0.507);
+  padding-right: 0;
+}

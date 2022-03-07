@@ -24,10 +24,13 @@
 #thumb{
     cursor: pointer;
     border-radius: 5px;
+    width: 98%;
 }
-/* #container-data:hover #title{
+#container-data:hover #title{
     display: block;
-} */
+    text-align: center;
+    /* transition: ease 1s all; */
+}
 
 /* -----------playbutton-------------- */
 #play1 {

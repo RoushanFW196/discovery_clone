@@ -1,77 +1,107 @@
 .discoveryGrid {
-    margin-top: 3%;
-    background-color: #1a1c21;
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+  margin-top: 3%;
+  background-color: #1a1c21;
+  font-family: "Open Sans", sans-serif;
 }
 
-.first-head{
-    padding-top: 2%;
-    color: white;
-    text-align: center;
+#grid_head,
+.secHead,
+.premium_grid_pTag {
+  color: #fff;
+}
+
+#grid_head {
+  padding-top: 3%;
+  padding-bottom: 2.2%;
+  text-align: center;
 }
 
 .secHead {
-    color: white;
-    padding-top: 5%;
-    padding-bottom: 1%;
-    text-align: center;
-  }
+  padding-top: 5%;
+  padding-bottom: 1%;
+  text-align: center;
+}
 
-.main {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-column-gap: 5px;
-    justify-content: space-evenly;
+#grid_main {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  justify-content: space-evenly;
+  /* grid-column-gap: 2px; */
 }
 
 .image-margin {
-    margin-bottom: 14%;
+  margin-bottom: 14%;
+  border-radius: 10px;
+}
+.image-margin2{
+  border-radius: 10px;
 }
 
 .container {
-    position: relative;
-    color: white;
+  position: relative;
+  cursor: pointer;
 }
 
 .centered {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  position: absolute;
+  bottom: 1em;
+  left: -0.7em;
 }
 
-.img-card-margin-bottom{
-    margin-bottom: 30px;
+.img-card-margin-bottom {
+  margin-bottom: 18px;
 }
-.img-card-margin-bottom-in-minus{
-    margin-bottom: -14px
-}
-
-.flex-main{
-    display: flex;
-    /* border: 1px solid red; */
-    width: 90%;
-    margin:auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-top: 50px; */
+.img-card-margin-bottom-in-minus {
+  margin-bottom: -24px;
 }
 
-.flex-main img{
-    margin-top: 50px;
-    /* border: 1px solid red; */
-    height: 80px;
-    width: 9.8%;
+.flex-main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.white-space-margin{
-    background-color: white;
-    width: 100%;
-    height: 25px;
-    margin-top: -40px;
+.flex-main img {
+  margin-top: 50px;
+  height: 80px;
+  width: 9.8%;
 }
 
-.premium-grid-titleTag{
-    margin-left: -26px;
-    margin-bottom: 20px;
+.premium_grid_pTag_hidden {
+  display: none;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.863);
+  padding: 1em;
+  margin: 0;
+  bottom: 5px;
+  left: 0.5em;
+  width: 19.5vw;
+  text-align: left;
+  line-height: 1;
+  font-size: 0.9em;
+  transition: 0.5s;
+}
+
+.premium_grid_pTag {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 1.2em;
+  left: 1.1em;
+  color: white;
+  transition: 0.3s;
+  width: 10em;
+  text-align: left;
+  font-weight: 550;
+  font-size: 1.2em;
+}
+
+.container:hover .premium_grid_pTag {
+  bottom: 2em;
+}
+
+.container:hover .premium_grid_pTag_hidden {
+  display: inline;
 }

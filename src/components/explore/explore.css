@@ -1,15 +1,12 @@
-*{
-    margin:0;
-    padding:0;
-    background-color:#1a1c21;
-}
+
 .explore-channelslist a img{
-    width:190px;
-    height:120px;
+    /* width:172px; */
+    width:200px;
+    height:110px;
     border-radius: 6px;
   margin:5px;
 }
-.explore-channelslist a{
+.explore-mid-icons{
     cursor:pointer;
     -webkit-tap-highlight-color:transparent;
     outline:none;
@@ -20,12 +17,12 @@
     padding:0px;
     vertical-align:baseline;
 }
-.explore-header h2{
+.explore-headingTag{
     font-size:20px;
     font-weight: 500;
     padding-left: 40px;
     margin-top:40px;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
     line-height:1.6
 }
   @media(max-width:1970px){
@@ -65,9 +62,10 @@
 }
 @media(min-width:700px){
     .explore-channel{
-        grid-column-gap: 10px;
+        grid-column-gap: 200px;
         grid-row-gap:10px;
         padding: 22px 38px 39px 38px;
+        cursor: pointer;
     }
 }
 .explore-channel img{

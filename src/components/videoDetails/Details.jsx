@@ -4,6 +4,7 @@ import { Image } from "./Image";
 import { useAuth } from "../../context/authContext";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Footer from "../footer/Footer";
 let info = {
   url: "https://bit.ly/3sdtyyB",
   heading: "Dark Mysteries: Anjaan Kahaniyaan",
@@ -18,76 +19,82 @@ let episodesData = [
     image: "https://bit.ly/3BT1JyH",
     duration: "22:30",
     name: "Possession",
-    description: "Experts explore how posession transforms life",
-  },
-  {
-    image: "https://bit.ly/3BT1JyH",
-    duration: "22:30",
-    name: "Possession",
-    description: "Experts explore how posession transforms life",
-  },
-  {
-    image: "https://bit.ly/3BT1JyH",
-    duration: "22:30",
-    name: "Possession",
-    description: "Experts explore how posession transforms life",
-  },
-  {
-    image: "https://bit.ly/3BT1JyH",
-    duration: "22:30",
-    name: "Possession",
-    description: "Experts explore how posession transforms life",
-  },
-  {
-    image: "https://bit.ly/3BT1JyH",
-    duration: "22:30",
-    name: "Possession",
-    description: "Experts explore how posession transforms life",
-  },
+    description: "Experts explore how posession transforms life for the good and evil.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/08/a96df768-f3a3-30e7-8fe5-c6f6e9629e08.jpeg?w=600&p=true&q=75",
+    duration: "25:10",
+    name: "Sorcery and Curses",
+    description: "People from a small town in Bengal claimed to be cursed and possessed.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/08/b5dc0f0f-1aa9-3c19-a15e-c6027151821e.jpeg?w=600&p=true&q=75",
+    duration: "27:58",
+    name: "Hauntings",
+    description: "A panoramal investigator explores areas haunted by spirits.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/10/77312c58-8cdd-358d-a0b6-3678a76af66a.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "26:32",
+    name: "Reincarnation",
+    description: "Embark on a journey across India in the search of the unexplained.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/09/8865da81-1eb4-35df-a054-68f4ed18ef21.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "26:04",
+    name: "Cursed Places",
+    description: "Experts explore the myths behind cursed settlements.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/23/02c9f11e-9a0d-3513-ac1c-5edb1bf042c6.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "23:50",
+    name: "Black Magic",
+    description: "Two young people seem to be affected by black magic.",
+}
 ];
 let shortsData = [
   {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
+    image: "https://ap2-prod-images.disco-api.com/2022/02/24/6dc1351d-d1fb-302d-8b63-f3b81762521c.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:45",
+    name: "Is black magic the cause of this family's illness",
+    description: "Dark magic from an evil djinn could be the cause of family's illness",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "00:29",
     name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
-  {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
-    name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
-  {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
-    name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
-  {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
-    name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
-  {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
-    name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
-  {
-    image:
-      "https://ap2-prod-images.disco-api.com/2022/02/18/ae772eab-4797-3e09-ab1c-bb7e75d83055.jpeg?w=600&p=true&q=75",
-    duration: "00:30",
-    name: "Dark Mysteries Anjaan Kahaniyaan - Trailer",
-    description: "This series searches across India and beyond for the...",
-  },
+    description: "00:29",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/46a122e8-a770-39fe-bb09-fdfc6938fce4.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:51",
+    name: "Possessed by a demon, Priest performs holy rites",
+    description: "This series searches across India and beyond for the unexplained.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/096d368e-c4aa-3b22-a806-950b90806c2c.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:56",
+    name: "The silence is shattered",
+    description: "A priest tribe tries to remove a curse brought upon a girl.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/70920f3b-9642-39a1-afef-b5ad82de6020.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:41",
+    name: "Is this young boy reincarnated from the past?",
+    description: "This series searches across India and beyond for the unexplained.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/8d2010c1-eeb9-3e65-8c6b-08c1baf2acb2.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:44",
+    name: "The Haunted Ghost Mines In Mussoorie",
+    description: "A panoramal investigator researches haunted mines in Uttarakhand.",
+},
+{
+    image: "https://ap2-prod-images.disco-api.com/2022/02/18/4fb7294e-5f63-385a-9541-6de22b908f00.jpeg?bf=0&f=jpg&p=true&q=85&w=200",
+    duration: "01:54",
+    name: "The curse of Talakadu, A city buried under sand dunes.",
+    description: "Legends say Talakadu was buried under sand dunes due to a princess' curse.",
+},
 ];
 export const Details = () => {
   const [episodes, setEpisodes] = useState(true);
@@ -102,11 +109,12 @@ export const Details = () => {
     !user && navigate('../')
   }, [user])
   return (
+    <div>
     <div className="whole-cont">
       <div className="imgcont">
         {/* hello world */}
-        <img id="image_1" src={info.url} />
-        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/nmRbNHYCzmU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        {/* <img id="image_1" src={info.url} /> */}
+        <iframe width="1110" height="623" src={video.link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
       <div className="details-cont">
         <div className="left-cont">
@@ -115,10 +123,10 @@ export const Details = () => {
               <Image />
             </div>
             <div>
-              <h1>{info.heading}</h1>
+              <h1>{video.title}</h1>
             </div>
           </div>
-          <p>
+          <p className="detals-pTag">
             {/* {info.tags[0]}&nbsp;{info.tags[1]} */}
             {info.tags.map((e) => (
               <span>
@@ -140,8 +148,8 @@ export const Details = () => {
             </svg>
             <h6 className="">Watch Now</h6>
           </button>
-          <p>{info.description}</p>
-          <p>
+          <p className="detals-pTag">{video.description}</p>
+          <p className="detals-pTag">
             Age Rating: {info.agerating} | Contains: {info.contains}
           </p>
         </div>
@@ -200,11 +208,11 @@ export const Details = () => {
             </button>
           </div>
           <div className="languages">
-            <p className="flex">
+            <p className="flex details-pTag">
               <text className="languages-text">Languages </text>{" "}
               <div className="flex-wrap">
                 {info.languages.map((e) => (
-                  <p>{e}&nbsp;</p>
+                  <p className="detals-pTag">{e}&nbsp;</p>
                 ))}
               </div>
             </p>
@@ -276,12 +284,12 @@ export const Details = () => {
                     </g>
                   </svg>
                   <div className="timestamp">
-                    <p>{e.duration}</p>
+                    <p className="detals-pTag">{e.duration}</p>
                   </div>
                 </div>
                 <div className="episode-details">
                   <h4>{e.name}</h4>
-                  <p>{e.description}</p>
+                  <p className="detals-pTag">{e.description}</p>
                 </div>
               </div>
             ))}
@@ -353,18 +361,20 @@ export const Details = () => {
                     </g>
                   </svg>
                   <div className="timestamp">
-                    <p>{e.duration}</p>
+                    <p className="detals-pTag">{e.duration}</p>
                   </div>
                 </div>
                 <div className="episode-details">
                   <h4>{e.name}</h4>
-                  <p>{e.description}</p>
+                  <p className="detals-pTag">{e.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       )}
+    </div>
+  <Footer />
     </div>
   );
 };
