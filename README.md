@@ -1,4 +1,4 @@
-# Discovery+ clone project (https://discovery-clone.web.app/login)
+# Discovery+ clone project (https://discovery-clone.web.app)
 
 This is a website cloning project we made during construct week of unit 5 of Masai School Web Development Course.
 
